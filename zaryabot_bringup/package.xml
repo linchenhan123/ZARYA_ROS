@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+  <name>zaryabot_bringup</name>
+  <version>0.0.1</version>
+
+  <description>
+    The zaryabot_bringup package provides roslaunch scripts for starting the ZaryaBot ROS node list.
+  </description>
+
+  <maintainer email="a0919958057@gmail.com">YE Cheng-Wei</maintainer>
+
+  <license>MIT</license>
+
+  <url type="website">https://github.com/a0919958057/tdk-zarya-robot/wiki</url>
+  <url type="repository">https://github.com/a0919958057/tdk-zarya-robot</url>
+  <url type="bugtracker">https://github.com/a0919958057/tdk-zarya-robot/issues</url>
+
+  <author email="a0919958057@gmail.com">YE Cheng-Wei</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <export>
+  </export>
+</package>

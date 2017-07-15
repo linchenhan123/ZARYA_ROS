@@ -1,0 +1,11 @@
+# Goal
+
+uint8 num_to_punch
+---
+# Result
+
+bool is_finish
+---
+# Feedback
+
+zaryabot_msgs/NumPunchState state
