@@ -139,6 +139,7 @@ void load_template()
         int j = i + 1;
         temp_name[i] = format("/home/lin/number_temp/number%d.png",j);
         temp[i] = imread(temp_name[i], IMREAD_GRAYSCALE);
+
     }
 //    temp_name[0] = "/home/lin/opencv-3.2.0/data/haarcascades/number1.png";
 //    temp_name[1] = "/home/lin/opencv-3.2.0/data/haarcascades/number2.png";

@@ -34,21 +34,21 @@ void number_Callback(const zaryabot_bringup::zarya &num);
 
 
 //CV initialization
-Mat cap_src;
-Mat cap_hsv;
+Mat cap_src;        //source image
+Mat cap_hsv;        //hsv image using for detect red color
 Mat hsv_thre1;
 Mat hsv_thre2;
-Mat front_ROI;   //ROI use for counting red pixel
+Mat front_ROI;   //ROI using for counting red pixel
 int number;      //number of red pixel
-int number_to_punch_(0);
+int number_to_punch_(0);    //the number to punch
 
 
 //robot follow state initialization
 
 bool mode(true);
 bool BUTTON_ON(false);
-bool incenter(false);
-bool getnumber_to_punch(false);
+bool incenter(false);                       //whether in center or not
+bool getnumber_to_punch(false);             //whether get the number ro not
 
 
 
@@ -96,7 +96,8 @@ void Callback(const sensor_msgs::Image &cap_msg)
 
 
 
-
+/****************************************/
+/****************************************/
 /*       ROS_ROROT_FOLLOW_STATE         */
 
 
@@ -144,7 +145,8 @@ void Callback(const sensor_msgs::Image &cap_msg)
 
     case 2:
      {
-        ROS_INFO("IN STATE2\n\n\n");
+
+         ROS_INFO("IN STATE2\n\n\n");
 
         srv.request.enable = true;
 
@@ -392,12 +394,6 @@ void Callback(const sensor_msgs::Image &cap_msg)
         ROS_ERROR("ERROR! No case has been satisfied!");//no case has been satisfied ,
         break;
  }
-
-
-
-
-
-
 
 
 

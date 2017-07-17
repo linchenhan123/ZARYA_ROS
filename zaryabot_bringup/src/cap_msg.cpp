@@ -67,7 +67,7 @@ int main(int argc, char **argv)
 
         cv_bridge::CvImage cvtrap_img(header,sensor_msgs::image_encodings::BGR8,cap_msgimg);
         pub.publish(cvtrap_img.toImageMsg());
-        ROS_INFO("%d",cap_msgimg.type());
+        ROS_INFO("publishing image messages~~~ (width: %d,height: %d)",cap_msgimg.cols,cap_msgimg.rows);
         looprate.sleep();
 
     }

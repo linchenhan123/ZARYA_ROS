@@ -152,7 +152,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 
-add_executable(webcam_loader_node src/webcam_loader.cpp)
+
 add_executable(cap_msg_node src/cap_msg.cpp)
 add_executable(follow_state_node src/follow_state.cpp)
 add_executable(line_following_node src/line_following.cpp)
@@ -173,10 +173,7 @@ add_executable(red_point_stop_node src/red_point_stop.cpp)
 
 ## Specify libraries to link a library or executable target against
 
-target_link_libraries(webcam_loader_node
-    ${catkin_LIBRARIES}
-    ${OpenCV_LIBS}
-    )
+
 target_link_libraries(cap_msg_node
     ${catkin_LIBRARIES}
     ${OpenCV_LIBS}
