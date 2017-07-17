@@ -170,6 +170,37 @@ add_executable(red_point_stop_node src/red_point_stop.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(follow_state_node
+    zaryabot_bringup_gen_cpp
+    zaryabot_bringup_generate_message_cpp
+    zaryabot_bringup_gencfg)
+add_dependencies(line_following_node
+    zaryabot_bringup_gen_cpp
+    zaryabot_bringup_generate_message_cpp
+    zaryabot_bringup_gencfg)
+add_dependencies(red_point_stop_node
+    zaryabot_bringup_gen_cpp
+    zaryabot_bringup_generate_message_cpp
+    zaryabot_bringup_gencfg)
+add_dependencies(wheel_sub_node
+    zaryabot_bringup_gen_cpp
+    zaryabot_bringup_generate_message_cpp
+    zaryabot_bringup_gencfg)
+add_dependencies(wheel_command_node
+    zaryabot_bringup_gen_cpp
+    zaryabot_bringup_generate_message_cpp
+    zaryabot_bringup_gencfg)
+add_dependencies(number_detect_node
+    zaryabot_bringup_gen_cpp
+    zaryabot_bringup_generate_message_cpp
+    zaryabot_bringup_gencfg)
+add_dependencies(cap_msg_node
+    zaryabot_bringup_gen_cpp
+    zaryabot_bringup_generate_message_cpp
+    zaryabot_bringup_gencfg)
+
+
+
 
 ## Specify libraries to link a library or executable target against
 
